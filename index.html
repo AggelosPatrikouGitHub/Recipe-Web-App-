@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Recipe Book</h1>
+    </header>
+
+    <section class="add-recipe">
+      <h2>Add a New Recipe</h2>
+      <form id="recipe-form">
+        <input type="text" id="title" placeholder="Recipe Title" required>
+        <textarea id="ingredients" placeholder="Ingredients (comma-separated)" required></textarea>
+        <textarea id="instructions" placeholder="Instructions" required></textarea>
+        <select id="category">
+          <option value="" disabled selected>Select Category</option>
+          <option value="Dessert">Dessert</option>
+          <option value="Main Course">Main Course</option>
+          <option value="Snack">Snack</option>
+        </select>
+        <button type="submit">Add Recipe</button>
+      </form>
+    </section>
+
+    <section class="search-recipe">
+      <h2>Search Recipes</h2>
+      <input type="text" id="search" placeholder="Search by keyword...">
+    </section>
+
+    <section class="recipe-list">
+      <h2>Recipe List</h2>
+      <div id="recipes"></div>
+    </section>
+  </div>
+  <script src="WorkScript.js"></script>
+</body>
+</html>
